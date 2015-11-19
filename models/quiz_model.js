@@ -30,8 +30,7 @@ function Quiz() {
           eval(x); /* DANGER DANGER DANGER */
           var z = Math.floor(Math.random()*100);
           return (square(z) == z*z);
-        }
-        catch(e) {
+        }catch(e) {
           return false;
         }
         return false;
