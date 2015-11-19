@@ -10,4 +10,8 @@ function Pregunta(enunciado){
   };
 }
 
-module.exports Pregunta;
+function pCorta(enunciado){
+  Pregunta.call(enunciado);
+}
+
+module.exports = Pregunta;
