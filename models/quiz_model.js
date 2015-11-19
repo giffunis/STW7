@@ -58,7 +58,7 @@ function Quiz() {
       })
     })();
   }
-  
+
   // debug(this.q);
 }
 

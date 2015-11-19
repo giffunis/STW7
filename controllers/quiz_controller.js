@@ -11,7 +11,7 @@ exports.question = function(req,res) {
 exports.home = function(req, res){
   //debug("en index.js: visitando '/'");
   res.render('index', {title: 'Quiz'});
-}
+};
 
 /* GET quizes/answer page. */
 exports.answer = function(req, res) {
