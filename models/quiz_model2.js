@@ -16,7 +16,7 @@ function Quiz() {
       respuesta: new Respuesta(/\b(Isabel\s+y?\s*Fernando)|(Fernando\s+[ey]?\s*Isabel)|(reyes\s+cat[oó]licos)\b/i)
     },
 
-    { pregunta: new PCorta('Escriba una función JavaScript de nombre <tt>square</tt> '+
+    { pregunta: new PLarga('Escriba una función JavaScript de nombre <tt>square</tt> '+
     'que recibe un número y devuelve el cuadrado'),
       respuesta: new Respuesta(function(x) {
         try {
@@ -29,7 +29,29 @@ function Quiz() {
         return false;
       })
     }
+
   );
+
+  // insertar unas cuantas preguntas sobre
+  // la tabla de multiplicar
+  var self  = this;
+  for(var i = 0; i<3;i++) {
+    (function() {
+      var n1 = Math.randomInt(9)+1;
+      // debug("n1 = "+n1);
+      var n2 = Math.randomInt(9)+1;
+      // debug("n2 = "+n2);
+      self.q.push(
+        { pregunta: new PCorta('¿ '+n1+'x'+n2+"= ?"),
+          respuesta: new Respuesta(function(x) {
+            // debug("n1 = "+n1);
+            // debug("n2 = "+n2);
+            return (x == n1*n2);
+        })
+      });
+    })();
+  }
+
 }
 
 Quiz.prototype = new AbstractQuiz();
