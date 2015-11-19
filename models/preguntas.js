@@ -5,13 +5,13 @@ function Pregunta(enunciado){
 }
 
 function pCorta(enunciado){
-  Pregunta.call(enunciado);
-  prototype.vista = "<input type='text' id='pCorta'>" + this.enunciado + "</input>";
+  Pregunta.call(this,enunciado);
+  this.vista = "<input type='text' id='pCorta'>" + this.enunciado + "</input>";
 }
 
 function pLarga(enunciado){
-  Pregunta.call(enunciado);
-  prototype.vista = "<textarea name='name' rows='2' cols='40'>" + this.enunciado + "</textarea>";
+  Pregunta.call(this,enunciado);
+  this.vista = "<textarea name='name' rows='2' cols='40'>" + this.enunciado + "</textarea>";
 }
 
 module.exports = Pregunta;
