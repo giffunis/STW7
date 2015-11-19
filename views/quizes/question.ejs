@@ -1,6 +1,6 @@
 <h3>Quiz: el juego de las preguntas</h3>
 <form method="get" action="/quizes/answer">
   <p>Pregunta: <%- pregunta.enunciado %></p>
-  <input type="text" name="respuesta" placeholder="Responda aquí" autofocus="">
+  <%- pregunta.entrada %>
   <input type="submit" value="Enviar">
 </form>
