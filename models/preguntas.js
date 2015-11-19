@@ -1,17 +1,17 @@
 function Pregunta(enunciado){
   this.enunciado = enunciado;
-
-  this.getEnunciado = function(){
-    return this.enunciado;
-  };
-
-  this.setEnunciado = function(newEnunciado){
-    this.enunciado = newEnunciado;
-  };
 }
 
 function pCorta(enunciado){
   Pregunta.call(enunciado);
+  prototype.vista = "<input type='text' id='pCorta'>" + this.enunciado + "</input>";
+}
+
+function pLarga(enunciado){
+  Pregunta.call(enunciado);
+  prototype.vista = "<textarea name='name' rows='2' cols='40'>" + this.enunciado + "</textarea>";
 }
 
 module.exports = Pregunta;
+module.exports = pCorta;
+module.exports = pLarga;
