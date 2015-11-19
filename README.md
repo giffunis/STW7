@@ -24,4 +24,4 @@ And to bring up the server:
 
 * My subject page. [Link](http://giffunis.github.io/stw.html)
 * My page personal page on github. [Link](http://giffunis.github.io/index.html)
-* Deployment (Heroku). [Link](https://quiz-alu0100770551.herokuapp.com/)
+* Deployment (Heroku). [Link](https://quiz2-alu0100770551.herokuapp.com/)
