@@ -1,9 +1,10 @@
-# ExpressJS: my second app.
+# ExpressJS: My new second app.
 ## Subject: Sistemas y Tecnologías Web
 
 #### 1. Resume.
 
-A very simple example of the quiz game with [express-generator](http://expressjs.com/es/starter/generator.html) and [express-partials](https://www.npmjs.com/package/express-partial) but without DDBB.
+A very simple example of the quiz game with [express-generator](http://expressjs.com/es/starter/generator.html) and [express-partials](https://www.npmjs.com/package/express-partial) but without DDBB. At this time, I created a Respuesta class
+that accept different parameters, and I created a Respuesta class too.
 
 #### 2. Requirements.
 
@@ -23,4 +24,4 @@ And to bring up the server:
 
 * My subject page. [Link](http://giffunis.github.io/stw.html)
 * My page personal page on github. [Link](http://giffunis.github.io/index.html)
-* Deployment (Only accessible from ULL vpn). [Link](http://10.6.128.81:8081/)
+* Deployment (Heroku). [Link](https://quiz-alu0100770551.herokuapp.com/)
