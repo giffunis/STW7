@@ -1,7 +1,5 @@
 "use stric";
 
-var Respuesta = require('./respuesta.js');
-
 function Pregunta(enunciado){
   this.enunciado = enunciado;
 }
