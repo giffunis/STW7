@@ -8,7 +8,7 @@ function Respuesta(respuesta){
     return function(x){return x === respuesta;};
   }else if (this.respuesta.__proto__.toString() === '/(?:)/') {
     // var aux = this.respuesta;
-    return function(x){return x.match(respuesta);};
+    return function(x){return x.match(this.respuesta);};
   }
   else if (this.respuesta.__proto__.toString() === "function () {}") {
     return respuesta;
